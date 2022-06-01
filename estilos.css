@@ -29,6 +29,22 @@ h1{
     text-align: center;
     font-size: 3rem;
 }
+h1{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+section#opciones:hover{
+    background-color: blueviolet;
+}
 ul{
     list-style-type: none;
 }
