@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav .menu{
+    position: relative;
+    text-align: right;
+    justify-content: space space-between;
+}
+li{
+    display: inline-block;
+}
+body{
+    background-image: url(./multimedia/background\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+}
+.favicon{
+    background-color: black;
+    position: sticky;
+    border: black solid 1px;
+    border-radius: 50%;
+}
+h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+ul{
+    list-style-type: none;
+}
+.parrafoIndex{
+    height: 500px;
+    width: 700px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid black;
+    line-height: 1.6;
+}
+.parrafoBox{
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid black;
+    line-height: 1.6;
+    text-align: center;
+}
+.frontend{
+    margin: 20px;
+    padding: 10px;
+}
+.backend{
+    margin: 20px;
+    padding: 10px;
+}
+.otras{
+    margin: 20px;
+    padding: 10px;
+}
+#grilla{
+    display: grid;
+    width: 95%;
+    grid-template-areas: 
+    "header header nav"
+    "opciones opciones opciones"
+    "unTexto unTexto unTexto"
+    "footer footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 40% 40% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+.border{
+    border: 1px solid black;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section#opciones{
+    grid-area: opciones;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section#unTexto{
+    grid-area: unTexto;
+    justify-self: center;
+}
+footer{
+    grid-area: footer;
+}
+@media only screen and (max-width: 768px){
+    #grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "opciones"
+        "unTexto"
+        "footer";
+    }
+    h1{
+        color: white;
+        font-size: 2rem;
+    }
+    nav .menu{
+        text-align: center;
+    }
+}
