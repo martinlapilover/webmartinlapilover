@@ -1,0 +1,44 @@
+body{
+    background-image: url("/multimedia/backgroundweb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    #grilla{
+        display: grid;
+        width: 95%;
+        grid-template-areas: 
+        "header header nav"
+        "opciones opciones opciones"
+        "unTexto unTexto unTexto"
+        "footer footer footer";
+        grid-template-rows: 100px 1fr 1fr 75px;
+        grid-template-columns: 40% 40% auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    nav{
+        grid-area: nav;
+            .border{
+                border: 1px solid black;
+                }
+                ul{
+                    list-style-type: none;
+                }
+                .menu{
+                    position: relative;
+                    text-align: right;
+                    justify-content: space space-between;
+                    li{
+                        display: inline-block;
+                    }
+                    &:hover{
+                        background-color: whitesmoke;
+                        transition: all 2s ease;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                }
+    }
+}

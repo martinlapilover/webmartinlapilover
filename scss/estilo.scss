@@ -1,0 +1,110 @@
+$tituloMobile: rgba(98, 72, 216, 0.911);
+@import "estructura";
+@import "mediaqueries.scss";
+
+/*Desafio Sass, agregué partials y una variable para el texto h1 en mobile)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.favicon{
+    background-color: black;
+    position: sticky;
+    border: black solid 1px;
+    border-radius: 50%;
+}
+header{
+    grid-area: header;
+    h1{
+        font-family: 'Kalam', cursive;
+        text-align: center;
+        font-size: 3rem;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
+}
+#opciones{
+        grid-area: opciones;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        &:hover{
+            background-color: blueviolet;
+        }
+    .border{
+        border: 1px solid black;
+    }
+    div{
+        .frontend{
+            margin: 20px;
+            padding: 10px;
+        }
+        .border{
+            border: 1px solid black;
+        }
+    }
+    div{
+        .backend{
+            margin: 20px;
+            padding: 10px;
+        }
+        .border{
+            border: 1px solid black;
+        }
+    }
+    div{
+        .otras{
+            margin: 20px;
+            padding: 10px;
+        }
+        .border{
+            border: 1px solid black;
+        }
+    }
+}
+#unTexto{
+        grid-area: unTexto;
+        justify-self: center;
+    }
+        .parrafoIndex{
+            height: 500px;
+            width: 700px;
+            padding: 10px;
+            margin: 20px;
+            display: inline-block;
+            overflow: hidden;
+            border: 3px solid black;
+            line-height: 1.6;
+        }
+        .border{
+            border: 1px solid black;
+        }
+footer{
+    grid-area: footer;
+    .border{
+        border: 1px solid black;
+    }
+}
+.parrafoBox{
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+    border: 3px solid black;
+    line-height: 1.6;
+    text-align: center;
+}
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
