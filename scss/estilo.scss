@@ -1,8 +1,9 @@
 $tituloMobile: rgba(98, 72, 216, 0.911);
-@import "estructura";
+@import "estructura.scss";
 @import "mediaqueries.scss";
 
 /*Desafio Sass, agregué partials y una variable para el texto h1 en mobile)*/
+
 *{
     margin: 0;
     padding: 0;
