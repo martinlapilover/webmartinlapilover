@@ -1,0 +1,4 @@
+ eEn el archivo index.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo: "Estudia programación, fundamentos básicos e introducción"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "HTML, HTML5, CSS, Frontend, Backend, desarrollo, coding, JS, Bootstrap"
+Encabezado: para el Title de mi página Index utilicé el texto "Introducción a la programación
